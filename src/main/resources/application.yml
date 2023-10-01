@@ -1,0 +1,7 @@
+server:
+  port: 8081
+
+# contenido para credenciales
+dts:
+  username: ${USER_EMAIL}
+  password: smtp-test-password
