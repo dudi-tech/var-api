@@ -13,15 +13,15 @@ public class ProcesoController {
     @Autowired
     private Environment env;
 
-    /*
-    public ProcesoController(Environment env) {
-        this.env = env;
-    }
-*/
     @GetMapping("/credenciales-email")
     public ResponseEntity<String> getCredencialesEmail() {
+
+        String emailO = System.getProperty("USER_EMAIL");
+        System.out.println("emailO: " + emailO);
+
         String usuario = env.getProperty("dts.username");
         String password = env.getProperty("dts.password");
+
         System.out.println("usuario: " + usuario);
         System.out.println("password: " + password);
         return ResponseEntity.ok(usuario + " " + password);
