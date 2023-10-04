@@ -3,5 +3,11 @@ server:
 
 # contenido para credenciales
 dts:
-  username: ${USER_EMAIL}
+  username: ENC(y4kIRj8QSG/LF526iZs7L1d/6fgcJsKfa3X4Yvgt6HdbaoCIi3d5/gNnES+N2bHpqEqAubdpLaKjKtsMPPHiTg==)
   password: smtp-test-password
+
+# Configuración de Jasypt
+jasypt:
+  encryptor:
+    password: secreto44
+
