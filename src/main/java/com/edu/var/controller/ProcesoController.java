@@ -17,14 +17,19 @@ public class ProcesoController {
     public ResponseEntity<String> getCredencialesEmail() {
 
         String emailO = System.getProperty("USER_EMAIL");
-        System.out.println("Var del Sistema emailO: " + emailO);
+        System.out.println("Var del Sistema user email: " + emailO);
 
-        String usuario = env.getProperty("dts.username");
-        String password = env.getProperty("dts.password");
+        String passworx = System.getProperty("USER_PASSWORD");
+        System.out.println("Var del Sistema password: " + passworx);
 
-        System.out.println("Var entorno - encriptada - usuario: " + usuario);
-        System.out.println(" - ");
-        System.out.println("password: " + password);
+        String usuario = env.getProperty("spring.mail.username");
+        String password = env.getProperty("spring.mail.password");
+
+        System.out.println("=========================================================");
+        System.out.println("Credenciales SMTP - encriptadas");
+        System.out.println("Usuario - Email: " + usuario);
+        System.out.println("Usuario - Password: " + password);
+        System.out.println("=========================================================");
         return ResponseEntity.ok(usuario + " " + password);
     }
 

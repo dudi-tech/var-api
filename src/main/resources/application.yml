@@ -1,13 +1,16 @@
 server:
   port: 8081
 
-# contenido para credenciales
-dts:
-  username: ENC(y4kIRj8QSG/LF526iZs7L1d/6fgcJsKfa3X4Yvgt6HdbaoCIi3d5/gNnES+N2bHpqEqAubdpLaKjKtsMPPHiTg==)
-  password: smtp-test-password
+# Database settings
+spring:
+  mail:
+    default-encoding: UTF-8
+    host: smtp-relay.art.com
+    username: ENC(U2O4SiCem1QHKW4jrvSYtXphzL+mZBDgus4gMcmTPbpmGaWnyETExBT+yZCpwWlXXjOrr4emQQUGwppxp8IeIQ==)
+    password: ENC(fbc3uxE0iOTdDFyOfV4zhiPGTYBSQdw1QoMEdnIOumpwD5debYI5KUT/OD+xWtYZ)
 
-# Configuración de Jasypt
+#Configuración de Jasypt
 jasypt:
   encryptor:
-    password: secreto44
+    password: Q6VwQ+JfTSnC
 
